@@ -1,0 +1,135 @@
+:root {
+  --transition-fast: 180ms ease;
+  --transition-base: 260ms ease;
+  --transition-smooth: 0.3s ease;
+}
+
+img {
+  transition: transform 320ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  img:not([src*="/logo/"]):hover {
+    transform: scale(1.035);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  img {
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .admin-layout {
+    animation: foodflow-admin-enter 360ms ease-out both;
+  }
+
+  .admin-login-body {
+    animation: foodflow-admin-enter 360ms ease-out both;
+  }
+
+  .admin-layout :where(.card, .stat-card, .sidebar-link, .btn, button) {
+    transition:
+      transform 220ms ease,
+      box-shadow 220ms ease,
+      border-color 180ms ease,
+      background-color 180ms ease,
+      color 180ms ease;
+  }
+}
+
+html body .admin-layout :is(
+    .card,
+    .stat-card,
+    .insight-card,
+    .settings-card,
+    .dashboard-date,
+    .orders-section,
+    .directory-card,
+    .menu-list-card,
+    .form-card,
+    .sales-card,
+    .order-summary-card,
+    .recent-orders-card,
+    .popular-items-card
+  ) {
+  transition:
+    transform 260ms ease,
+    box-shadow 260ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  html body .admin-layout :is(
+      .card,
+      .stat-card,
+      .insight-card,
+      .settings-card,
+      .dashboard-date,
+      .orders-section,
+      .directory-card,
+      .menu-list-card,
+      .form-card,
+      .sales-card,
+      .order-summary-card,
+      .recent-orders-card,
+      .popular-items-card
+    ):hover {
+    transform: translateY(-4px);
+    border-color: var(--admin-accent);
+    box-shadow: var(--admin-shadow-card);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html body .admin-layout :is(
+      .card,
+      .stat-card,
+      .insight-card,
+      .settings-card,
+      .dashboard-date,
+      .orders-section,
+      .directory-card,
+      .menu-list-card,
+      .form-card,
+      .sales-card,
+      .order-summary-card,
+      .recent-orders-card,
+      .popular-items-card
+    ) {
+    transition: none;
+  }
+
+  html body .admin-layout :is(
+      .card,
+      .stat-card,
+      .insight-card,
+      .settings-card,
+      .dashboard-date,
+      .orders-section,
+      .directory-card,
+      .menu-list-card,
+      .form-card,
+      .sales-card,
+      .order-summary-card,
+      .recent-orders-card,
+      .popular-items-card
+    ):hover {
+    transform: none;
+  }
+}
+
+@keyframes foodflow-admin-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
