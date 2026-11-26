@@ -1,17 +1,14 @@
-
-// Simple scroll reveal
 document.addEventListener("DOMContentLoaded", function () {
   const elements = document.querySelectorAll(".scroll-reveal");
 
   function revealElements() {
-    elements.forEach(function (element) {
-      const position = element.getBoundingClientRect().top;
-      const screenHeight = window.innerHeight;
+    for (let i = 0; i < elements.length; i++) {
+      const position = elements[i].getBoundingClientRect().top;
 
-      if (position < screenHeight - 100) {
-        element.classList.add("show");
+      if (position < window.innerHeight - 100) {
+        elements[i].classList.add("show");
       }
-    });
+    }
   }
 
   window.addEventListener("scroll", revealElements);
