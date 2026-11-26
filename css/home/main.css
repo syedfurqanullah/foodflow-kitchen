@@ -496,8 +496,7 @@ ul {
 }
 
 .hero-content,
-.hero-content .hero-description,
-.hero-content .hero-highlight-item {
+.hero-content .hero-description {
   color: var(--color-cream-light);
 }
 
@@ -1942,15 +1941,13 @@ body.menu-page {
 }
 
 .menu-page .footer-links a,
-.menu-page .footer-contact p,
-.menu-page .footer-social a {
+.menu-page .footer-links a {
   color: var(--color-text-soft);
   font-size: 13px;
   margin-bottom: 8px;
 }
 
-.menu-page .footer-links a:hover,
-.menu-page .footer-social a:hover {
+.menu-page .footer-links a:hover {
   color: var(--color-accent-bright);
 }
 

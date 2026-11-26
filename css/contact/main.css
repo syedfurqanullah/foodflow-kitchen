@@ -10,7 +10,6 @@
   max-width: 720px;
   margin-right: auto;
 }
-.contact-page .hero-tag,
 .contact-page .small-heading,
 .contact-page .message-tag {
   display: inline-flex;
@@ -23,7 +22,6 @@
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
-.contact-page .hero-tag::before,
 .contact-page .small-heading::before,
 .contact-page .message-tag::before {
   width: 28px;

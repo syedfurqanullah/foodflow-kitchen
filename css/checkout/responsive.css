@@ -29,8 +29,7 @@
     margin-right: auto;
 }
 
-.checkout-page .checkout-container > *,
-.checkout-page .checkout-footer-container > * {
+.checkout-page .checkout-container > * {
     min-width: 0;
 }
 

@@ -68,9 +68,9 @@
           <a
             class="cart-link"
             href="cart.html"
-            aria-label="Shopping cart, 0 items"
+            aria-label="Shopping cart, 5 sample items"
             ><img class="cart-link-icon" src="../assets/icons/shopping-cart.svg" alt="" aria-hidden="true"><span class="cart-label">Cart</span
-            ><span class="cart-count" aria-hidden="true">0</span></a
+            ><span class="cart-count" aria-hidden="true">5</span></a
           ><a class="button button-primary order-button" href="menu/menu.html"
             >Order Online</a
           ><a class="button button-secondary signup-button" href="signup.html"
@@ -127,8 +127,7 @@
             </h2>
             <p>
               Reach out with questions about orders, menu items or restaurant
-              information. This form is a frontend preview and does not send
-              messages yet.
+              information. This demo form does not send or store your details.
             </p>
             <div class="message-details">
               <div class="message-detail">
@@ -152,13 +151,12 @@
               <h2>Send a <span>message</span></h2>
               <p>We’ll be happy to hear from you.</p>
             </div>
-            <form class="contact-form" action="#" method="post">
+            <form class="contact-form" action="form-success.html" method="get">
               <div class="form-row">
                 <div class="form-group">
                   <label for="name">Full name</label
                   ><input
                     id="name"
-                    name="name"
                     type="text"
                     placeholder="Your name"
                     required
@@ -168,7 +166,6 @@
                   <label for="email">Email address</label
                   ><input
                     id="email"
-                    name="email"
                     type="email"
                     placeholder="you@example.com"
                     required
@@ -179,7 +176,6 @@
                 <label for="subject">Subject</label
                 ><input
                   id="subject"
-                  name="subject"
                   type="text"
                   placeholder="How can we help?"
                   required
@@ -189,14 +185,18 @@
                 <label for="message">Message</label
                 ><textarea
                   id="message"
-                  name="message"
                   placeholder="Write your message"
                   required
                 ></textarea>
               </div>
-           <a href="../pages/form-success.html"><button class="message-submit" type="submit">
-                Send message <img class="inline-icon" src="../assets/icons/arrow-right.svg" alt="" aria-hidden="true">
-                </a>   
+              <button class="message-submit" type="submit">
+                Send message
+                <img
+                  class="inline-icon"
+                  src="../assets/icons/arrow-right.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
               </button>
             </form>
           </div>

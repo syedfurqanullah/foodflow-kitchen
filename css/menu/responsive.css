@@ -63,7 +63,7 @@
     padding: 16px;
   }
 
-  .menu-page .food-info button {
+  .menu-page .food-info .cart-button {
     font-size: 0.75rem;
     padding-inline: 10px;
   }
@@ -144,7 +144,7 @@
     padding-top: 10px;
   }
 
-  .menu-page .food-info button {
+  .menu-page .food-info .cart-button {
     width: 100%;
     min-height: 44px;
   }
@@ -165,7 +165,7 @@
     flex-direction: row;
   }
 
-  .menu-page .food-info button {
+  .menu-page .food-info .cart-button {
     width: auto;
   }
 }
@@ -175,7 +175,7 @@
   .menu-page .food-card,
   .menu-page .food-card > img,
   .menu-page .menu-categories a,
-  .menu-page .food-info button {
+  .menu-page .food-info .cart-button {
     transition: none;
   }
 }

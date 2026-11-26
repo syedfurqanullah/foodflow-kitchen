@@ -164,7 +164,6 @@
   border-bottom: 1px solid var(--admin-border);
 }
 
-.admin-topbar-nav a,
 .admin-topbar-site {
   color: var(--admin-muted);
   font-size: 13px;
@@ -172,7 +171,6 @@
   transition: color 0.2s ease;
 }
 
-.admin-topbar-nav a:hover,
 .admin-topbar-site:hover {
   color: var(--admin-accent-hover);
 }

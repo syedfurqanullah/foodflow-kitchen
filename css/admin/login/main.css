@@ -447,8 +447,7 @@
   color: var(--color-accent);
 }
 .page-title,
-.card-title,
-.confirm-title {
+.card-title {
   font-family: var(--font-display);
 }
 .page-description {
@@ -621,7 +620,6 @@
   padding: 10px 0 16px;
   border-bottom: 1px solid var(--overlay-white-09);
 }
-.admin-topbar-nav a,
 .admin-topbar-site {
   min-height: 38px;
   display: inline-flex;
