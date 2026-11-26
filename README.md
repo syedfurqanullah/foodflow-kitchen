@@ -37,7 +37,7 @@ Food Flow Restaurant/
 └── js/                        Existing JavaScript files
 ```
 
-The planned technologies are HTML, CSS, and JavaScript. The current website pages use HTML and CSS; JavaScript features will be implemented in a later stage. The existing files in `js/` are not currently linked from the HTML pages.
+The website uses HTML and CSS, with `js/menu/main.js` providing menu search and category filtering. Most other files in `js/` are empty placeholders for future JavaScript features.
 
 ## Run the website locally
 

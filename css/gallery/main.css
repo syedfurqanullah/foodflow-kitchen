@@ -1,11 +1,9 @@
 
 :root {
     --primary-gold: var(--color-accent);
-    --dark-bg: var(--color-ink);
     --dark-card: var(--color-surface);
     --light-bg: var(--color-ink);
     --text-dark: var(--color-cream);
-    --text-light: var(--color-cream);
 }
 
 * {
@@ -20,15 +18,6 @@ body {
     color: var(--text-dark);
 }
 
-.gallery-header {
-    min-height: 75px;
-    padding: 0 8%;
-    background: var(--dark-bg);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .logo {
     color: var(--color-cream);
     font-size: 27px;
@@ -37,23 +26,6 @@ body {
 }
 
 .logo span {
-    color: var(--primary-gold);
-}
-
-.gallery-nav {
-    display: flex;
-    gap: 30px;
-}
-
-.gallery-nav a {
-    color: var(--color-text-muted);
-    text-decoration: none;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-.gallery-nav a:hover,
-.gallery-nav a.active {
     color: var(--primary-gold);
 }
 
@@ -114,32 +86,6 @@ body {
     line-height: 1.6;
 }
 
-.gallery-filters {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-bottom: 40px;
-}
-
-.filter-btn {
-    border: 1px solid var(--color-border);
-    background: var(--color-surface);
-    color: var(--color-cream);
-    padding: 11px 22px;
-    border-radius: var(--radius-control);
-    cursor: pointer;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-.filter-btn:hover,
-.filter-btn.active {
-    background: var(--primary-gold);
-    border-color: var(--primary-gold);
-    color: var(--color-ink);
-}
-
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -192,18 +138,6 @@ body {
 
 .image-overlay h3 {
     font-size: 21px;
-}
-
-.gallery-card.hide {
-    display: none;
-}
-
-.gallery-footer {
-    padding: 25px;
-    background: var(--dark-bg);
-    color: #aaa;
-    text-align: center;
-    font-size: 13px;
 }
 
 /* Use a shared crop size so the gallery stays tidy across screen widths. */

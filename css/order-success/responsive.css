@@ -28,10 +28,6 @@
 
 @media (max-width: 480px) {
 
-    .home-link {
-        font-size: 13px;
-    }
-
     .success-main {
         padding: 30px 13px;
     }
@@ -92,10 +88,6 @@
     .back-home-btn {
         min-height: 48px;
         font-size: 13px;
-    }
-
-    .success-footer p {
-        font-size: 11px;
     }
 }
 

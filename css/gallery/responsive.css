@@ -4,28 +4,10 @@
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .gallery-header {
-        padding: 20px 5%;
-    }
-
-    .gallery-nav {
-        gap: 18px;
-    }
 }
 
 /* Mobile layout: Stack navigation and use compact gallery cards. */
 @media (max-width: 600px) {
-    .gallery-header {
-        flex-direction: column;
-        gap: 18px;
-    }
-
-    .gallery-nav {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
 
     .gallery-hero {
         min-height: 300px;
@@ -52,10 +34,6 @@
 
     .image-overlay h3 {
         font-size: 16px;
-    }
-
-    .filter-btn {
-        padding: 9px 16px;
     }
 }
 

@@ -164,23 +164,6 @@
   border-bottom: 1px solid var(--admin-border);
 }
 
-.admin-topbar-brand {
-  color: var(--admin-text);
-  font-size: 17px;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.admin-topbar-brand span {
-  color: var(--admin-accent);
-}
-
-.admin-topbar-nav {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
 .admin-topbar-nav a,
 .admin-topbar-site {
   color: var(--admin-muted);

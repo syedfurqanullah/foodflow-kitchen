@@ -157,23 +157,6 @@ textarea {
   border-bottom: 1px solid var(--admin-border);
 }
 
-.admin-topbar-brand {
-  color: var(--admin-text);
-  font-size: 17px;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.admin-topbar-brand span {
-  color: var(--admin-accent);
-}
-
-.admin-topbar-nav {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
 .admin-topbar-nav a,
 .admin-topbar-site {
   color: var(--admin-muted);
@@ -458,93 +441,6 @@ textarea {
 .btn:focus-visible,
 .sidebar-link:focus-visible,
 .settings-nav-link:focus-visible {
-  outline: 2px solid var(--admin-accent-hover);
-  outline-offset: 3px;
-}
-
-/* ---------- 10. Notification Preferences ---------- */
-
-.notification-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.notification-item {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  min-height: 76px;
-  padding: 15px 0;
-  border-bottom: 1px solid var(--admin-border);
-  cursor: pointer;
-}
-
-.notification-item:last-child {
-  border-bottom: 0;
-}
-
-.notification-copy {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.notification-copy strong {
-  color: var(--admin-text);
-  font-size: 12px;
-}
-
-.notification-copy small {
-  color: var(--admin-muted);
-  font-size: 11px;
-  line-height: 1.5;
-}
-
-/* Hide native checkbox but preserve keyboard access */
-.notification-item input {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip-path: inset(50%);
-  white-space: nowrap;
-}
-
-.toggle-switch {
-  position: relative;
-  flex: 0 0 43px;
-  width: 43px;
-  height: 24px;
-  border: 1px solid var(--admin-border);
-  border-radius: 20px;
-  background: #39362f;
-  transition: background-color 0.2s ease;
-}
-
-.toggle-switch::after {
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: var(--admin-text);
-  content: "";
-  transition: transform 0.2s ease;
-}
-
-.notification-item input:checked + .toggle-switch {
-  background: var(--admin-accent);
-}
-
-.notification-item input:checked + .toggle-switch::after {
-  transform: translateX(19px);
-  background: var(--admin-dark);
-}
-
-.notification-item input:focus-visible + .toggle-switch {
   outline: 2px solid var(--admin-accent-hover);
   outline-offset: 3px;
 }

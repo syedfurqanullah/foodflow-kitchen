@@ -19,9 +19,6 @@
   --admin-input-text: var(--admin-text);
   --admin-input-placeholder: rgba(var(--admin-text-rgb), 0.58);
   --admin-card-hover: rgb(var(--admin-surface-hover-rgb));
-  --admin-success: #77bd83;
-  --admin-warning: #d89a55;
-  --admin-danger: #dc9285;
   --admin-focus-ring: var(--admin-accent-ring);
   --admin-radius: 14px;
   --admin-card-radius: 16px;

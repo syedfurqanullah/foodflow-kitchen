@@ -93,12 +93,12 @@
 }
 
 @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
-  .cart-page .cart-item:hover img {
+  .cart-page .cart-item:hover > img {
     transform: scale(1.035);
   }
 }
 
-.cart-page .cart-item img {
+.cart-page .cart-item > img {
   width: 68px;
   height: 68px;
   flex: 0 0 68px;
@@ -129,46 +129,52 @@
 .cart-page .cart-quantity {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 3px;
   padding: 5px;
-  border: 1px solid var(--overlay-white-12);
-  border-radius: 7px;
-}
-
-.cart-page .cart-quantity button {
-  width: 25px;
-  height: 25px;
-  border: none;
-  border-radius: 5px;
+  border: 1px solid var(--color-border-warm);
+  border-radius: 9px;
   background: var(--color-surface-hover);
-  color: var(--color-cream);
-  cursor: pointer;
-  font-size: 16px;
-  transition:
-    transform var(--transition-fast),
-    color var(--transition-fast),
-    background-color var(--transition-fast);
 }
 
-.cart-page .cart-quantity .quantity-icon {
-  display: block;
-  width: 14px;
-  height: 14px;
-  margin: auto;
-}
-
-.cart-page .cart-quantity span {
-  font-size: 13px;
+.cart-page .cart-quantity input[type="number"] {
+  width: 64px;
+  height: 36px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--color-surface-hover);
+  color: var(--color-accent-bright);
+  color-scheme: dark;
+  font: inherit;
+  font-size: 17px;
   font-weight: bold;
+  text-align: center;
+}
+
+.cart-page .cart-quantity input[type="number"]::-webkit-inner-spin-button,
+.cart-page .cart-quantity input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+.cart-page .cart-quantity input[type="number"]:focus-visible {
+  outline: 2px solid var(--color-accent-bright);
+  outline-offset: 2px;
+  border-radius: 3px;
 }
 
 /* DELETE */
 
 .cart-page .cart-delete {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 32px;
+  padding: 0;
   border: none;
   background: transparent;
   color: var(--color-danger);
-  font-size: 22px;
   cursor: pointer;
   transition:
     opacity var(--transition-fast),
@@ -177,17 +183,11 @@
 
 .cart-page .cart-delete-icon {
   display: block;
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
 }
 
 @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
-  .cart-page .cart-quantity button:hover:not(:disabled) {
-    transform: translateY(-1px);
-    background: var(--color-accent-bright);
-    color: var(--color-ink);
-  }
-
   .cart-page .cart-delete:hover:not(:disabled) {
     opacity: 0.78;
     transform: translateY(-1px);

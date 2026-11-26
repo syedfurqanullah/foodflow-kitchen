@@ -38,17 +38,8 @@
         padding: 10px;
     }
 
-    .logout {
-        margin-top: 15px;
-    }
-
     .main-content {
         padding: 20px 14px;
-    }
-
-    .topbar {
-        align-items: flex-start;
-        flex-direction: column;
     }
 
     .stats-grid {

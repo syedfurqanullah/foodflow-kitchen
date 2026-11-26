@@ -7,17 +7,6 @@
 
 @media (max-width: 768px) {
 
-    .my-orders-header .my-orders-container {
-        flex-wrap: wrap;
-        padding: 18px 0;
-        gap: 18px;
-    }
-
-    .my-orders-nav {
-        gap: 18px;
-        flex-wrap: wrap;
-    }
-
     .my-orders-main {
         padding: 45px 0;
     }
@@ -56,20 +45,6 @@
         width: 92%;
     }
 
-    .my-orders-header .my-orders-container {
-        align-items: flex-start;
-    }
-
-    .my-orders-nav {
-        width: 100%;
-        gap: 15px;
-        flex-wrap: wrap;
-    }
-
-    .my-orders-nav a {
-        font-size: 12px;
-    }
-
     .my-orders-heading {
         flex-direction: column;
         margin-bottom: 30px;
@@ -103,10 +78,6 @@
 
     /* FOOTER */
 
-    .foodflow-footer {
-        padding: 40px 6% 20px;
-    }
-
     .footer-container {
         grid-template-columns: 1fr;
         gap: 28px;
@@ -129,18 +100,6 @@
 /* SMALL MOBILE */
 
 @media (max-width: 350px) {
-
-    .my-orders-logo {
-        font-size: 21px;
-    }
-
-    .my-orders-nav {
-        gap: 11px;
-    }
-
-    .my-orders-nav a {
-        font-size: 11px;
-    }
 
     .my-orders-heading h1 {
         font-size: 26px;

@@ -18,7 +18,7 @@
   overflow: hidden;
   background: var(--color-ink);
 }
-.about-page .about-hero-image {
+.about-page .about-hero .about-hero-image {
   position: absolute;
   z-index: 0;
   inset: 0;
@@ -27,6 +27,7 @@
   object-fit: cover;
   object-position: center 52%;
   filter: saturate(0.86) contrast(1.04);
+  transition: none;
 }
 .about-page .about-hero::before {
   position: absolute;
@@ -318,8 +319,9 @@
   line-height: 1.65;
 }
 @media (hover: hover) and (pointer: fine) {
-  .about-page .about-hero:hover .about-hero-image {
-    transform: scale(1.035);
+  .about-page .about-hero:hover .about-hero-image,
+  .about-page .about-hero .about-hero-image:hover {
+    transform: none;
   }
 
   .about-page .special-card:hover img {

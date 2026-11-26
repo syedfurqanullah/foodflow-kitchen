@@ -126,17 +126,6 @@
     padding: 15px 0;
   }
 
-  .admin-topbar-brand {
-    font-size: 15px;
-  }
-
-  .admin-topbar-nav {
-    order: 3;
-    width: 100%;
-    gap: 17px;
-    overflow-x: auto;
-  }
-
   .admin-topbar-nav a,
   .admin-topbar-site {
     font-size: 11px;

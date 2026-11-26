@@ -148,23 +148,6 @@
     width: 100%;
     min-height: 44px;
   }
-
-  .menu-page .menu-footer-inner {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .menu-page .menu-footer-inner > p {
-    margin: 0;
-  }
-
-  .menu-page .menu-footer nav {
-    flex-wrap: wrap;
-  }
-
-  .menu-page .menu-footer small {
-    width: 100%;
-  }
 }
 
 /* Narrow screens: Stack each menu card image above its details. */

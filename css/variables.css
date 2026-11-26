@@ -34,25 +34,16 @@
   --color-accent-deep-warm: var(--color-accent);
   --color-accent-orange: var(--color-accent);
   --color-accent-gold: var(--color-accent);
-  --color-accent-pale: var(--color-cream);
   --color-accent-tint: rgba(var(--color-accent-rgb), 0.16);
   --color-accent-tint-soft: rgba(var(--color-accent-rgb), 0.12);
-  --color-accent-tint-pale: rgba(var(--color-accent-rgb), 0.2);
   --color-border-pale: rgba(var(--color-accent-rgb), 0.2);
   /* Status colors remain distinct from the brand accent. */
   --color-success: #77bd83;
-  --color-warning: #d89a55;
   --color-danger: #dc9285;
 
-  /* Semantic customer theme controls: update these for a site-wide recolour. */
-  --color-brand: var(--color-accent-bright);
-  --color-brand-hover: var(--color-accent-bright-hover);
-  --color-page-background: var(--color-ink);
   --color-card-background: var(--color-surface-raised);
   --color-card-border: var(--color-border);
   --color-card-border-strong: var(--color-accent);
-  --color-input-background: var(--color-surface);
-  --color-input-text: var(--color-text);
   --color-focus-ring: var(--color-accent);
 
   /* Common translucent surfaces and overlays */
@@ -70,9 +61,7 @@
   --overlay-ink-28: rgba(var(--color-ink-rgb), 0.28);
   --overlay-ink-22: rgba(var(--color-ink-rgb), 0.22);
   --overlay-ink-20: rgba(var(--color-ink-rgb), 0.2);
-  --overlay-cream-96: rgba(var(--color-text-rgb), 0.96);
   --overlay-cream-82: rgba(var(--color-text-rgb), 0.82);
-  --overlay-cream-76: rgba(var(--color-text-rgb), 0.76);
   --overlay-cream-55: rgba(var(--color-text-rgb), 0.55);
   --overlay-cream-48: rgba(var(--color-text-rgb), 0.48);
   --overlay-cream-04: rgba(var(--color-text-rgb), 0.04);
@@ -80,7 +69,6 @@
   --overlay-white-10: rgba(var(--color-text-rgb), 0.1);
   --overlay-white-09: rgba(var(--color-text-rgb), 0.09);
   --overlay-white-08: rgba(var(--color-text-rgb), 0.08);
-  --overlay-black-24: rgba(0, 0, 0, 0.24);
   --overlay-black-20: rgba(0, 0, 0, 0.2);
   --overlay-black-16: rgba(0, 0, 0, 0.16);
   --overlay-black-10: rgba(0, 0, 0, 0.1);
@@ -95,11 +83,6 @@
   --overlay-gold-12: rgba(var(--color-accent-rgb), 0.12);
   --overlay-gold-10: rgba(var(--color-accent-rgb), 0.1);
   --overlay-gold-08: rgba(var(--color-accent-rgb), 0.08);
-  --overlay-gold-amber-68: rgba(var(--color-accent-rgb), 0.68);
-  --overlay-gold-amber-32: rgba(var(--color-accent-rgb), 0.32);
-  --overlay-gold-amber-22: rgba(var(--color-accent-rgb), 0.22);
-  --overlay-gold-amber-13: rgba(var(--color-accent-rgb), 0.13);
-  --overlay-accent-17: rgba(var(--color-accent-rgb), 0.17);
   --overlay-accent-12: rgba(var(--color-accent-rgb), 0.12);
   --overlay-muted-text-70: rgba(var(--color-text-rgb), 0.7);
   --overlay-deep-gold-42: rgba(var(--color-accent-rgb), 0.42);
@@ -107,7 +90,6 @@
   --overlay-deep-gold-05: rgba(var(--color-surface-rgb), 0.05);
   --overlay-deep-gold-12: rgba(var(--color-surface-rgb), 0.12);
   --overlay-shadow: rgba(0, 0, 0, 0.24);
-  --overlay-caption: rgba(var(--color-ink-rgb), 0.85);
   --overlay-shadow-strong: rgba(0, 0, 0, 0.2);
   --overlay-image-shade: rgba(var(--color-ink-rgb), 0.88);
   --overlay-image-shade-soft: rgba(var(--color-ink-rgb), 0.18);
@@ -117,11 +99,6 @@
   --font-display: Georgia, "Times New Roman", serif;
   --container-width: 1200px;
   --page-gutter: 24px;
-  --space-1: 4px;
-  --space-2: 8px;
-  --space-3: 12px;
-  --space-4: 16px;
-  --space-5: 20px;
   --space-6: 24px;
   --radius-sm: 7px;
   --radius-md: 12px;
@@ -134,7 +111,6 @@
   --shadow-floating: 0 18px 50px rgba(0, 0, 0, 0.2);
   /* Compatibility aliases used by the existing page styles */
   --color-primary: var(--color-accent);
-  --color-primary-light: var(--color-accent-light);
   --color-bg-main: var(--color-ink);
   --color-bg-card: var(--color-surface);
   --color-bg-hover: var(--color-surface-hover);
@@ -142,7 +118,6 @@
   --color-text-secondary: var(--color-text-muted);
   --font-primary: "Poppins", sans-serif;
   --section-spacing: 80px;
-  --card-padding: 22px;
 }
 
 /* =========================================================
@@ -234,25 +209,6 @@ html body :is(a, button, input, select, textarea, summary, [tabindex]):focus-vis
   background-color: var(--color-ink);
 }
 
-.content-page-card {
-  width: min(100%, 760px);
-  padding: clamp(28px, 6vw, 56px);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  background: var(--color-surface);
-  box-shadow: var(--shadow-card);
-  text-align: center;
-}
-
-.content-page-eyebrow {
-  margin: 0 0 14px;
-  color: var(--color-accent-light);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
 .content-page-main h1 {
   margin: 0 auto 18px;
   color: var(--color-cream);
@@ -267,19 +223,6 @@ html body :is(a, button, input, select, textarea, summary, [tabindex]):focus-vis
   color: var(--color-text-soft);
   font-size: 1rem;
   line-height: 1.75;
-}
-
-.content-page-main .content-page-note {
-  color: var(--color-text-subtle);
-  font-size: 0.9rem;
-}
-
-.content-page-actions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 28px;
 }
 
 .inline-icon {

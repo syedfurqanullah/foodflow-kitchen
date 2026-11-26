@@ -5,27 +5,6 @@
 .contact-page main {
   overflow: hidden;
 }
-.contact-page .contact-hero {
-  position: relative;
-  isolation: isolate;
-  display: grid;
-  width: 100vw;
-  min-height: clamp(400px, 44vw, 580px);
-  place-items: center;
-  margin-left: calc(50% - 50vw);
-  padding: 78px
-    max(var(--page-gutter), calc((100% - var(--container-width)) / 2));
-  overflow: hidden;
-  background:
-    linear-gradient(
-      90deg,
-      var(--overlay-ink-96) 0%,
-      var(--overlay-ink-78) 52%,
-      var(--overlay-ink-28) 100%
-    ),
-    url("../../assets/images/about/restaurant-interior.jpg") center / cover
-      no-repeat;
-}
 .contact-page .hero-content {
   width: 100%;
   max-width: 720px;
@@ -119,6 +98,7 @@
   gap: 16px;
 }
 .contact-page .contact-card {
+  display: block;
   min-height: 236px;
   padding: 28px 24px;
   border: 1px solid var(--overlay-gold-18);
@@ -128,6 +108,8 @@
     var(--color-surface-raised),
     var(--color-ink-soft)
   );
+  color: inherit;
+  text-decoration: none;
   transition:
     transform var(--transition-base),
     border-color var(--transition-fast),

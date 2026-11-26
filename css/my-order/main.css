@@ -2,53 +2,10 @@
    SAMI MY ORDERS START
 ========================================== */
 
-.my-orders-header {
-  background: var(--color-ink);
-  border-bottom: 1px solid rgba(var(--color-text-rgb), 0.1);
-}
-
 .my-orders-container {
   width: 90%;
   max-width: 1200px;
   margin: auto;
-}
-
-.my-orders-header .my-orders-container {
-  min-height: 85px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 25px;
-}
-
-.my-orders-logo {
-  color: var(--color-cream);
-  text-decoration: none;
-  font-size: 25px;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
-
-.my-orders-logo span {
-  color: var(--color-accent);
-}
-
-.my-orders-nav {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
-.my-orders-nav a {
-  color: var(--color-text-soft);
-  text-decoration: none;
-  font-size: 14px;
-  transition: 0.3s;
-}
-
-.my-orders-nav a:hover,
-.my-orders-nav a.active {
-  color: var(--color-accent);
 }
 
 /* MAIN */
@@ -281,13 +238,6 @@
    FOODFLOW PROFESSIONAL FOOTER
 ========================================== */
 
-.foodflow-footer {
-  background: var(--color-ink);
-  color: var(--color-cream);
-  border-top: 1px solid rgba(var(--color-text-rgb), 0.12);
-  padding: 55px 5% 20px;
-}
-
 .footer-container {
   max-width: 1200px;
   margin: auto;
@@ -343,13 +293,6 @@
 .footer-links a:hover {
   color: var(--color-accent);
   padding-left: 4px;
-}
-
-.footer-contact p {
-  color: var(--color-text-muted);
-  font-size: 13px;
-  line-height: 1.7;
-  overflow-wrap: anywhere;
 }
 
 /* FOOTER BOTTOM */

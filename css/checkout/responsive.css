@@ -178,12 +178,6 @@
     max-width: 100%;
 }
 
-.checkout-page .checkout-footer-container {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr 1fr;
-    gap: 35px;
-}
-
 
 /* ==================================================
    1. EXTRA SMALL MOBILE
@@ -294,17 +288,6 @@
         padding: 13px 10px;
         font-size: 14px;
     }
-
-    .checkout-page .checkout-footer-container {
-        display: flex;
-        flex-direction: column;
-        gap: 22px;
-    }
-
-    .checkout-page .checkout-footer-bottom p {
-        font-size: 11px;
-        text-align: center;
-    }
 }
 
 
@@ -372,12 +355,6 @@
     .checkout-page .place-order-btn {
         width: 100%;
     }
-
-    .checkout-page .checkout-footer-container {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-    }
 }
 
 
@@ -409,12 +386,6 @@
 
     .checkout-page .checkout-hero-content h1 {
         font-size: 38px;
-    }
-
-    .checkout-page .checkout-footer-container {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 25px;
     }
 }
 
@@ -449,12 +420,6 @@
     .checkout-page .checkout-hero-content h1 {
         font-size: 42px;
     }
-
-    .checkout-page .checkout-footer-container {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 30px;
-    }
 }
 
 
@@ -485,10 +450,6 @@
     }
 
     .checkout-page .payment-options {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .checkout-page .checkout-footer-container {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
@@ -532,10 +493,6 @@
     .checkout-page .checkout-product-info h3 {
         font-size: 14px;
     }
-
-    .checkout-page .checkout-footer-container {
-        gap: 20px;
-    }
 }
 
 
@@ -564,10 +521,6 @@
     .checkout-page .checkout-form-row {
         gap: 14px;
     }
-
-    .checkout-page .checkout-footer-container {
-        gap: 25px;
-    }
 }
 
 
@@ -591,10 +544,6 @@
     .checkout-page .checkout-form-section,
     .checkout-page .checkout-summary {
         padding: 28px;
-    }
-
-    .checkout-page .checkout-footer-container {
-        gap: 35px;
     }
 }
 
@@ -623,10 +572,6 @@
 
     .checkout-page .checkout-hero-content h1 {
         font-size: 52px;
-    }
-
-    .checkout-page .checkout-footer-container {
-        gap: 45px;
     }
 }
 
@@ -690,10 +635,6 @@
     .checkout-page .place-order-btn {
         padding: 18px;
         font-size: 18px;
-    }
-
-    .checkout-page .checkout-footer-container {
-        gap: 55px;
     }
 }
 
@@ -772,10 +713,6 @@
     .checkout-page .place-order-btn {
         padding: 22px;
         font-size: 21px;
-    }
-
-    .checkout-page .checkout-footer-container {
-        gap: 65px;
     }
 }
 
@@ -898,10 +835,6 @@
         display: block;
     }
 
-    .checkout-page .checkout-header-actions {
-        display: none;
-    }
-
     .checkout-page .brand {
         margin-right: auto;
     }
@@ -933,13 +866,6 @@
 
     .checkout-page .mobile-signup-link {
         display: none;
-    }
-
-    .checkout-page .checkout-header-actions {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        flex-shrink: 0;
     }
 
     .checkout-page .navigation-list {

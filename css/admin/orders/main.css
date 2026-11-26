@@ -64,15 +64,6 @@ select {
     color: var(--admin-accent);
 }
 
-.sidebar-label {
-    margin: 0 0 15px;
-    padding-left: 10px;
-    color: var(--admin-muted);
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-}
-
 .sidebar nav {
     display: flex;
     flex-direction: column;
@@ -102,44 +93,12 @@ select {
     box-shadow: inset 3px 0 0 var(--admin-accent);
 }
 
-.logout {
-    margin-top: auto;
-    border-top: 1px solid var(--admin-border);
-    border-radius: 0;
-    color: #d98b80;
-}
-
 /* ---------- 4. Main Content ---------- */
 
 .main-content {
     flex: 1;
     min-width: 0;
     padding: 0 32px 28px;
-}
-
-/* ---------- 5. Topbar ---------- */
-
-.topbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    min-height: 76px;
-    border-bottom: 1px solid var(--admin-border);
-}
-
-.topbar h1 {
-    margin: 0;
-    color: var(--admin-text);
-    font-size: 25px;
-    letter-spacing: -0.5px;
-}
-
-.topbar p {
-    margin: 7px 0 0;
-    color: var(--admin-muted);
-    font-size: 12px;
-    line-height: 1.6;
 }
 
 .admin-profile {
@@ -359,32 +318,6 @@ tbody tr:hover {
 .status.cancelled {
     background: rgba(190, 105, 90, 0.13);
     color: #dc9285;
-}
-
-/* ---------- 11. Action Button ---------- */
-
-.action-btn {
-    min-height: 32px;
-    padding: 7px 12px;
-    border: 1px solid var(--admin-border);
-    border-radius: 7px;
-    background: transparent;
-    color: var(--admin-accent-hover);
-    cursor: pointer;
-    font-size: 10px;
-    font-weight: 700;
-    transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.action-btn:hover {
-    border-color: var(--admin-accent);
-    background: var(--admin-accent);
-    color: var(--admin-dark);
-}
-
-.action-btn:focus-visible {
-    outline: 2px solid var(--admin-accent-hover);
-    outline-offset: 3px;
 }
 
 /* ---------- 12. Empty State ---------- */

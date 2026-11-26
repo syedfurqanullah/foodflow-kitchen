@@ -8,7 +8,6 @@
 
 /* Mobile layout: Simplify spacing and stack form fields. */
 @media (max-width: 600px) {
-  .contact-page .contact-hero { min-height: 470px; padding-block: 64px; background-position: 58% center; }
   .contact-page .hero-content h1 { font-size: clamp(3.1rem, 15vw, 4.2rem); }
   .contact-page .hero-content p { font-size: .98rem; }
   .contact-page .contact-section, .contact-page .map-section { padding-block: 64px; }

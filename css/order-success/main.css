@@ -18,20 +18,6 @@ body.order-success-page {
     flex-direction: column;
 }
 
-.brand-highlight {
-    color: var(--color-accent);
-}
-
-.home-link {
-    color: var(--color-cream);
-    text-decoration: none;
-    font-size: 15px;
-}
-
-.home-link:hover {
-    color: var(--color-accent);
-}
-
 /* MAIN */
 
 .success-main {
@@ -250,20 +236,6 @@ body.order-success-page {
 
 .thank-you span {
     color: var(--color-accent);
-}
-
-/* FOOTER */
-
-.success-footer {
-    padding: 23px 15px;
-    text-align: center;
-    background: var(--color-ink);
-    border-top: 1px solid rgba(var(--color-text-rgb), 0.1);
-}
-
-.success-footer p {
-    color: var(--color-text-subtle);
-    font-size: 12px;
 }
 
 /* SAMI ORDER SUCCESS END */
